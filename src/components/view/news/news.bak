@@ -138,6 +138,8 @@
     }
 
     .news__item .news__description:before {
+        -webkit-transform: skewX(-3deg);
+        transform: skewX(-3deg);
         content: '';
         background: #fff;
         width: 30px;
@@ -154,7 +156,9 @@
 
     .news__item.alt .news__description:before {
         left: inherit;
-        right: 0px;
+        right: -10px;
+        -webkit-transform: skew(3deg);
+        transform: skew(3deg);
     }
 
     .news__item.alt .news__meta-details {
