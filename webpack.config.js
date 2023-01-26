@@ -20,6 +20,7 @@ const baseConfig = {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, '../dist'),
+        hashFunction: 'sha256',
     },
     plugins: [
         new HtmlWebpackPlugin({
