@@ -7,7 +7,7 @@
     color: #333;
     line-height: 1.4;
     font-family: Arial, sans-serif;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     width: 95%;
     border-style: solid;
@@ -61,16 +61,19 @@
     background: #fff;
     position: relative;
     z-index: 1;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .news__item .news__description h2 {
     line-height: 1;
     margin: 0;
     font-size: 1.2rem;
+    font-family: 'Newsreader', serif;
 }
 
 .news__item .news__description h3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 300;
     text-transform: uppercase;
     color: #a2a2a2;
@@ -109,16 +112,17 @@
 .news__item p:first-of-type {
     margin-top: 1.25rem;
     position: relative;
+    padding-top: 1rem;
 }
 
 .news__item p:first-of-type:before {
     content: '';
     position: absolute;
-    height: 5px;
+    height: 4px;
     background: #5ad67d;
-    width: 35px;
+    width: 65px;
     top: -0.75rem;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .news__item:hover .news__meta-details {
