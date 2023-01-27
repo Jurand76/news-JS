@@ -11,21 +11,21 @@
 
 .source__item {
     background: none;
-    border: 2px solid #30c5ff;
+    border: 2px solid #1d0088;
     font: inherit;
     line-height: 1;
     margin: 0.2em;
     padding: 0.3em 0.3em;
-    color: #70d6ff;
+    color: #2807a1;
     transition: 0.25s;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .source__item:hover,
 .source__item:focus {
     border-color: #3fcc59;
     color: #69db7e;
-    box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
 }
 
 .source__item-name {
