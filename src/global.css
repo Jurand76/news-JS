@@ -2,19 +2,30 @@ body {
     color: #fff;
     background: #f6f5f2;
     font-family: sans-serif;
+    margin-top: 0px;
+    padding: 0;
 }
 
 main {
     display: flex;
 }
 header {
-    padding: 10px 30px;
+    padding: 0px 0px;
+    background-image: url('header.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 290px;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 800;
     color: black;
+    font-family: 'Newsreader', serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-left: 30px;
 }
 
 footer {
