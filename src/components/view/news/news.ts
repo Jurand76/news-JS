@@ -1,11 +1,23 @@
 import './news.css';
 
+interface NewsItem {
+    urlToImage: string;
+    author: string;
+    publishedAt: string;
+    title: string;
+    source: {
+        name: string;
+    };
+    description: string;
+    url: string;
+}
+
 class News {
-    draw(data) {
+    draw(data: NewsItem[]) {
         const news = data.length >= 10 ? data.filter((_item, idx) => idx < 10) : data;
 
         const fragment = document.createDocumentFragment();
-        const newsItemTemp = document.querySelector('#newsItemTemp');
+        const newsItemTemp = document.querySelector('#newsItemTemp') as any;
 
         news.forEach((item, idx) => {
             const newsClone = newsItemTemp.content.cloneNode(true);
