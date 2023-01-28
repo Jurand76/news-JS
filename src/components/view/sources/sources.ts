@@ -1,9 +1,14 @@
 import './sources.css';
 
+interface SourceItem {
+    id: string;
+    name: string;
+}
+
 class Sources {
-    draw(data) {
+    draw(data: SourceItem[]) {
         const fragment = document.createDocumentFragment();
-        const sourceItemTemp = document.querySelector('#sourceItemTemp');
+        const sourceItemTemp = document.querySelector('#sourceItemTemp') as HTMLFormElement;
 
         data.forEach((item) => {
             const sourceClone = sourceItemTemp.content.cloneNode(true);
