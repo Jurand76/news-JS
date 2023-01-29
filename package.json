@@ -3,11 +3,15 @@
     "version": "1.0.0",
     "description": "",
     "main": "webpack.base.config.js",
+    "files": [
+        "src/"
+    ],
     "scripts": {
         "production": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider  node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
         "build": "webpack --config ./webpack.config.js --env mode=prod",
-        "lint": "eslint . --ext .ts"
+        "lint": "eslint . --ext .ts",
+        "deploy": "gh-pages -d dist"
     },
     "repository": {
         "type": "git",
