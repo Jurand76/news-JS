@@ -2,9 +2,10 @@ class Loader {
     options: any;
     baseLink: string;
     endpoint: string;
-    constructor(baseLink: string, options: Object) {
+    constructor(baseLink: string, options: Object, endpoint = 'default_endpoint') {
         this.baseLink = baseLink;
         this.options = options;
+        this.endpoint = endpoint;
     }
 
     getResp(

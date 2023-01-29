@@ -42,8 +42,12 @@ class News {
             fragment.append(newsClone);
         });
 
-        document.querySelector('.news').innerHTML = '';
-        document.querySelector('.news').appendChild(fragment);
+        const newsContainer = document.querySelector('.news');
+
+        if (newsContainer) {
+            newsContainer.innerHTML = '';
+            newsContainer.appendChild(fragment);
+        }
     }
 }
 
