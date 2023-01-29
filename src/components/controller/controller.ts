@@ -1,4 +1,10 @@
+import Sources from 'Components/view/sources/sources';
 import AppLoader from './appLoader';
+
+interface SourceItem {
+    id: string;
+    name: string;
+}
 
 class AppController extends AppLoader {
     getSources(callback: any) {
